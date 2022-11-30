@@ -17,7 +17,6 @@ return {
 
     ["<leader>df"] = { "<cmd> DiffviewOpen <cr>", desc = "Open diffview" },
     ["<leader>dd"] = { "<cmd> DiffviewFileHistory %<cr>", desc = "diff current file" },
-    ["<leader>dv"] = { ":call v:lua.compare_to_clipboard()<CR>", desc = "Diff selected with clipboard" },
 
     ["<leader>wl"] = { "<cmd>vsplit<cr>", desc = "Split window vertically" },
     ["<leader>wo"] = { "<c-w>o", desc = "Maximize window" },
@@ -54,8 +53,8 @@ return {
     ["<leader>fk"] = { "<cmd>Telescope keymaps<cr>", desc = "Find commands/keymaps" }, -- keymap is more like commands for me
 
     -- tree
-    ["<C-n>"] = { "<cmd> Neotree toggle <CR>", desc = "toggle nvimtree" },
-    ["<leader>e"] = { "<cmd> Neotree focus <CR>", desc = "focus nvimtree" },
+    ["<C-n>"] = { "<cmd>Neotree toggle <CR>", desc = "toggle nvimtree" },
+    ["<leader>e"] = { "<cmd>Neotree focus <CR>", desc = "focus nvimtree" },
 
     -- No
     ["<leader>nl"] = { "<cmd> nohl <CR>", desc = "nohl" },

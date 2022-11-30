@@ -71,17 +71,6 @@ local config = {
 
         -- Set dashboard header
         header = {
-                " █████  ███████ ████████ ██████   ██████",
-                "██   ██ ██         ██    ██   ██ ██    ██",
-                "███████ ███████    ██    ██████  ██    ██",
-                "██   ██      ██    ██    ██   ██ ██    ██",
-                "██   ██ ███████    ██    ██   ██  ██████",
-                " ",
-                "    ███    ██ ██    ██ ██ ███    ███",
-                "    ████   ██ ██    ██ ██ ████  ████",
-                "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
-                "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
-                "    ██   ████   ████   ██ ██      ██",
         },
 
         -- Default theme configuration
@@ -110,7 +99,7 @@ local config = {
                         beacon = false,
                         bufferline = true,
                         cmp = true,
-                        dashboard = true,
+                        dashboard = false,
                         highlighturl = true,
                         hop = false,
                         indent_blankline = true,

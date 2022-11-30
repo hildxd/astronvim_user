@@ -15,7 +15,15 @@ return {
     --   requires = "kevinhwang91/promise-async",
     --   config = function() require "user.my-plugin.nvim-ufo" end,
     -- },
-
+    ["princejoogie/dir-telescope.nvim"] = {
+      requires = "nvim-telescope/telescope.nvim",
+      config = function()
+        require("dir-telescope").setup({
+          hidden = true,
+          respect_gitignore = true,
+        })
+      end,
+    }
   },
   -- All other entries override the require("<key>").setup({...}) call for default plugins
   ["null-ls"] = function(config) -- overrides `require("null-ls").setup(config)`
@@ -33,7 +41,7 @@ return {
     return config -- return final config table
   end,
   treesitter = { -- overrides `require("treesitter").setup(...)`
-    -- ensure_installed = { "lua" },
+    ensure_installed = { "lua" },
   },
   -- use mason-lspconfig to configure LSP installations
   ["mason-lspconfig"] = { -- overrides `require("mason-lspconfig").setup(...)`
