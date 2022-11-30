@@ -50,7 +50,8 @@ return {
       desc = "Grep in Directory",
     },
     ["<M-e>"] = { "<cmd>Telescope oldfiles<cr>", desc = "Find Recent files" },
-    ["<leader>fk"] = { "<cmd>Telescope keymaps<cr>", desc = "Find commands/keymaps" }, -- keymap is more like commands for me
+    -- keymap is more like commands for me
+    ["<leader>fk"] = { "<cmd>Telescope keymaps<cr>", desc = "Find commands/keymaps" },
 
     -- tree
     ["<C-n>"] = { "<cmd>Neotree toggle <CR>", desc = "toggle nvimtree" },
